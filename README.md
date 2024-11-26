@@ -1,6 +1,4 @@
 # OS Concepts
----
-
 ## 1. First-Come, First-Served (FCFS) Scheduling
 FCFS is the simplest CPU scheduling algorithm where the process that arrives first is executed first.
 
@@ -11,8 +9,6 @@ FCFS is the simplest CPU scheduling algorithm where the process that arrives fir
 ### Characteristics:
 - **Turnaround Time**: Time taken from the arrival of a process to its completion.
 - **Waiting Time**: Time a process spends waiting in the ready queue.
-
----
 
 ## 2. Shortest Job First (SJF) Scheduling
 SJF selects the process with the smallest execution time for scheduling.
@@ -25,8 +21,6 @@ SJF selects the process with the smallest execution time for scheduling.
 - Reduces average waiting time compared to FCFS.
 - Requires knowledge of the CPU burst time in advance, which is often estimated.
 
----
-
 ## 3. Round Robin (RR) Scheduling
 Round Robin is a **preemptive** scheduling algorithm that assigns a fixed time quantum to each process in the ready queue.
 
@@ -37,8 +31,6 @@ Round Robin is a **preemptive** scheduling algorithm that assigns a fixed time q
 ### Characteristics:
 - **Time Quantum**: Determines the time slice for each process.
 - Processes are preempted and moved to the back of the queue if not completed within their time slice.
-
----
 
 ## 4. Producer-Consumer Problem
 The **Producer-Consumer Problem** is a classic synchronization problem where two processes (producer and consumer) share a fixed-size buffer.
@@ -67,8 +59,6 @@ The **Producer-Consumer Problem** is a classic synchronization problem where two
   2. Remove data from the buffer.
   3. Signal the buffer is empty.
 
----
-
 ## 5. Least Recently Used (LRU) Page Replacement Algorithm
 The **LRU Page Replacement Algorithm** is used in operating systems to manage memory. When a page fault occurs, it replaces the page that has not been used for the longest time.
 
@@ -77,16 +67,12 @@ The **LRU Page Replacement Algorithm** is used in operating systems to manage me
 - **Page Hit**: Occurs when the requested page is already in memory.
 - **LRU Strategy**: Tracks the usage of pages and selects the least recently used one for replacement.
 
----
-
 ## 6. Most Frequently Used (MFU) Page Replacement Algorithm
 The **MFU Page Replacement Algorithm** is based on the principle that the page with the highest frequency of usage in the past is likely to be used less in the future, and thus should be replaced.
 
 ### Key Concepts:
 - Tracks the frequency of page access.
 - Replaces the page with the highest access count during a page fault.
-
----
 
 ## 7. Banker’s Algorithm
 The **Banker's Algorithm** is a resource allocation and deadlock avoidance algorithm in operating systems. It ensures the system operates in a **safe state**, where deadlocks are prevented.
@@ -96,16 +82,12 @@ The **Banker's Algorithm** is a resource allocation and deadlock avoidance algor
 - **Resources**: Divisible and reusable entities required by processes (e.g., CPU cycles, memory).
 - **Safe State**: A state where all processes can complete without deadlocks.
 
----
-
 ## 8. Deadlock and Safe States
 **Deadlock** occurs when processes are waiting for resources held by each other, creating a cycle of dependencies with no process able to proceed.
 
 ### Deadlock Avoidance:
 - Ensures that the system never enters an unsafe state by carefully allocating resources.
 - The **Banker's Algorithm** is a classic method for deadlock avoidance.
-
----
 
 ## 9. FIFO Page Replacement Algorithm
 The **FIFO (First-In-First-Out) Page Replacement Algorithm** is one of the simplest page replacement strategies used in operating systems. It replaces the oldest page in memory when a page fault occurs.
